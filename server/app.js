@@ -18,7 +18,7 @@ const IS_PROD = process.env.NODE_ENV === 'production' || !!process.env.VERCEL;
 const DEMO = String(process.env.DEMO_MODE).toLowerCase() === 'true';
 const SECRET = process.env.SECRET || (IS_PROD ? '' : 'restoku-dev-secret');
 const TZ = process.env.APP_TIMEZONE || 'Asia/Jakarta';
-const CONFIG = { name: process.env.RESTO_NAME || 'Restoku', address: process.env.RESTO_ADDRESS || 'Jl. Contoh No. 1, Surabaya', tax: 0.1, service: 0.05 };
+const CONFIG = { name: process.env.RESTO_NAME || 'Restoku', address: process.env.RESTO_ADDRESS || 'Jl. Raya Darmo No. 25, Surabaya', tax: 0.1, service: 0.05 };
 const ROLES = ['ADMIN', 'KASIR', 'DAPUR'];
 const DEMO_ACCOUNTS = [
   { role: 'ADMIN', name: 'Admin Restoku', email: process.env.ADMIN_EMAIL || 'admin@restoku.com', password: process.env.ADMIN_PASSWORD || 'admin123' },
