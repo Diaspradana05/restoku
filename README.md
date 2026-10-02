@@ -34,10 +34,10 @@ Data disimpan di Upstash Redis karena Vercel tidak bisa menyimpan file.
 
 1. Import repo ke Vercel (Framework Preset: Other).
 2. Hubungkan Upstash Redis lewat tab Storage.
-3. Isi environment variable sesuai .env.example: SECRET, ADMIN_EMAIL, ADMIN_PASSWORD.
+3. Isi environment variable di Settings: SECRET, ADMIN_EMAIL, ADMIN_PASSWORD, dan RESTO_ADDRESS.
 4. Deploy. Jika env baru diisi setelahnya, lakukan Redeploy.
 
-Opsional: DEMO_MODE=true untuk data contoh dan akun demo di halaman login, APP_TIMEZONE (default Asia/Jakarta).
+Opsional: DEMO_MODE=true untuk data contoh dan akun demo di halaman login, APP_TIMEZONE (default Asia/Jakarta), RESTO_NAME.
 
 ## Catatan
 
