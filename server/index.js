@@ -1,4 +1,4 @@
-// Runner untuk VPS / lokal / Docker. (Di Vercel, api/index.js yang dipakai.)
+import './env.js';
 import fs from 'fs';
 import { fileURLToPath } from 'url';
 import express from 'express';
