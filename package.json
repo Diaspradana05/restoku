@@ -1,0 +1,16 @@
+{
+  "name": "restoku",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=18" },
+  "scripts": {
+    "setup": "npm install && npm install --prefix client",
+    "dev": "concurrently -n API,WEB \"npm run dev:server\" \"npm run dev --prefix client\"",
+    "dev:server": "node --watch server/index.js",
+    "build": "npm run build --prefix client",
+    "start": "NODE_ENV=production node server/index.js",
+    "vercel-build": "npm run build --prefix client"
+  },
+  "dependencies": { "cors": "^2.8.5", "express": "^4.19.2" },
+  "devDependencies": { "concurrently": "^9.0.0" }
+}
